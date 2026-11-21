@@ -1,0 +1,282 @@
+/* =====================================================
+   wallet-voice-call | Pure Dark-Obsidian Design Tokens
+   Monochrome Surfaces: #0B0B0E / #141418 / #26262E / #FFFFFF
+   ===================================================== */
+
+:root {
+  --bg-pitch-black: #0B0B0E;
+  --bg-surface: #141418;
+  --border-subtle: #26262E;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #E4E4E7;
+  --text-muted: #A1A1AA;
+  --text-dim: #71717A;
+
+  --radius-window: 32px;
+  --radius-card: 16px;
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+
+  --font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --top-bar-height: calc(max(env(safe-area-inset-top, 14px), 14px) + 42px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
+  background-color: var(--bg-pitch-black);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+}
+
+body {
+  overflow-x: clip;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.deviceFrame {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #0B0B0E;
+}
+
+.screenContainer {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0B0B0E;
+  box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+  .deviceFrame {
+    padding: 24px 0;
+    align-items: center;
+  }
+  .screenContainer {
+    min-height: 840px;
+    height: 840px;
+    border-radius: 36px;
+    border: 1.5px solid #26262E;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #26262E transparent;
+  }
+}
+
+.topHeroWindow {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: transparent;
+  padding-top: calc(max(env(safe-area-inset-top, 14px), 14px) + 8px);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bottomCurvedWindow {
+  flex: 1;
+  width: 100%;
+  min-height: calc(100dvh - 170px);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  background: #141418;
+  border-top: 1px solid #26262E;
+  border-left: 1px solid #26262E;
+  border-right: 1px solid #26262E;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 20;
+}
+
+.floatingNavCapsule {
+  position: fixed;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 380px;
+  height: 52px;
+  border-radius: 26px;
+  background: #141418;
+  border: 1px solid #26262E;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 90;
+}
+
+.mainScrollableArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px calc(env(safe-area-inset-bottom, 20px) + 100px) 16px;
+  min-height: 460px;
+  position: relative;
+  z-index: 30;
+}
+
+/* Pure Monochrome Obsidian Button / Pill */
+.glass-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #26262E;
+  background: #141418;
+  color: #E4E4E7;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.glass-pill:hover:not(:disabled) {
+  transform: scale(1.01);
+  border-color: #3F3F46;
+  color: #FFFFFF;
+}
+
+.glass-pill:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Primary Solid White Action Button */
+.primary-action-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 24px;
+  border-radius: var(--radius-pill);
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.primary-action-pill:hover:not(:disabled) {
+  transform: scale(1.01);
+}
+
+.primary-action-pill:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.primary-action-pill:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Monochrome Secondary Circular Call Button (Obsidian #141418 + #26262E border) */
+.call-btn-secondary {
+  width: 68px;
+  height: 68px;
+  border-radius: var(--radius-circle);
+  background: #141418;
+  border: 1.5px solid #26262E;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.call-btn-secondary:hover:not(:disabled) {
+  transform: scale(1.04);
+  border-color: #FFFFFF;
+}
+
+/* Monochrome Primary Circular Call Button (Solid White #FFFFFF + #000000 icon) */
+.call-btn-primary {
+  width: 68px;
+  height: 68px;
+  border-radius: var(--radius-circle);
+  background: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.call-btn-primary:hover:not(:disabled) {
+  transform: scale(1.04);
+}
+
+.screen-dimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes ringOrbital {
+  0% { transform: scale(0.88); opacity: 0.7; }
+  50% { transform: scale(1.18); opacity: 0.2; }
+  100% { transform: scale(1.36); opacity: 0; }
+}
