@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" fill="none">
+  <rect width="900" height="440" rx="16" fill="#0B0B0E"/>
+  <rect x="20" y="20" width="860" height="400" rx="12" fill="#141418" stroke="#26262E" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="48" y="60" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700">wallet-voice-call</text>
+  <rect x="242" y="42" width="128" height="26" rx="13" fill="#141418" stroke="#26262E"/>
+  <circle cx="258" cy="55" r="3.5" fill="#FFFFFF"/>
+  <text x="270" y="59" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">SIWE Verified</text>
+
+  <rect x="380" y="42" width="146" height="26" rx="13" fill="#141418" stroke="#26262E"/>
+  <text x="396" y="59" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">0xf39F...2266</text>
+
+  <rect x="708" y="40" width="144" height="30" rx="15" fill="#FFFFFF"/>
+  <text x="733" y="59" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">Accepting Calls</text>
+
+  <line x1="20" y1="88" x2="880" y2="88" stroke="#26262E"/>
+
+  <!-- Left Active Call Panel -->
+  <rect x="44" y="110" width="440" height="284" rx="10" fill="#0B0B0E" stroke="#26262E"/>
+  <text x="68" y="138" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">ACTIVE CALL // P2P WEBRTC OPUS</text>
+
+  <circle cx="264" cy="204" r="40" fill="#141418" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="264" cy="204" r="54" stroke="#26262E" stroke-width="1"/>
+  <text x="244" y="209" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">0x70</text>
+
+  <text x="197" y="280" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700">0x7099...79C8</text>
+  <text x="235" y="306" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="700">04:18</text>
+
+  <!-- Call Controls -->
+  <rect x="116" y="332" width="88" height="36" rx="18" fill="#141418" stroke="#26262E"/>
+  <text x="145" y="354" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Mute</text>
+
+  <rect x="216" y="332" width="108" height="36" rx="18" fill="#FFFFFF"/>
+  <text x="246" y="354" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">End Call</text>
+
+  <rect x="336" y="332" width="96" height="36" rx="18" fill="#141418" stroke="#26262E"/>
+  <text x="361" y="354" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Speaker</text>
+
+  <!-- Right Signaling & Session Log -->
+  <rect x="504" y="110" width="352" height="284" rx="10" fill="#0B0B0E" stroke="#26262E"/>
+  <text x="528" y="138" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">SIGNALING &amp; CALL STATE</text>
+
+  <rect x="528" y="154" width="304" height="168" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="544" y="180" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">[auth] EIP-191 nonce verified</text>
+  <text x="544" y="204" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">[ws] single-use ticket consumed</text>
+  <text x="544" y="228" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">[call] ringing -&gt; connecting</text>
+  <text x="544" y="252" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">[rtc] sdp offer / answer exchanged</text>
+  <text x="544" y="276" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">[rtc] ice connected (dtls-srtp)</text>
+  <text x="544" y="300" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">grace_window: 20s | gas_cost: 0</text>
+
+  <rect x="528" y="340" width="218" height="34" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="542" y="361" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">0x70997970C518...79C8</text>
+  <rect x="756" y="340" width="76" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="782" y="361" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">Dial</text>
+</svg>
