@@ -1,0 +1,18 @@
+{
+  "name": "wallet-voice-call",
+  "short_name": "wallet-voice-call",
+  "description": "Encrypted peer-to-peer WebRTC voice calling directly between EVM crypto wallets.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0E",
+  "theme_color": "#0B0B0E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/liquid-orb.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
